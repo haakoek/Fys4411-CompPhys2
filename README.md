@@ -1,1 +1,1 @@
-# Fys4411-CompPhysII
+# Fys4411-CompPhys2
