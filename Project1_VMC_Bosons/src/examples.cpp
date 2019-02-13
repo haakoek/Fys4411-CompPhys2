@@ -23,15 +23,15 @@
 
 using namespace std;
 
-int Examples::nonInteractingHObruteForce(int nrOfdims, int nrOfpart,int nrOfsteps, double om) {
+int Examples::nonInteractingHObruteForce(int nrOfdims, int nrOfpart,int nrOfsteps, double om, double al) {
 
     int numberOfDimensions  = nrOfdims;
     int numberOfParticles   = nrOfpart;
     int numberOfSteps       = (int) nrOfsteps;
     double omega            = om;                    // Oscillator frequency.
-    double alpha            = 0.5*omega;            // Variational parameter.
+    double alpha            = al;            // Variational parameter.
     double stepLength       = 2.5;                 // Metropolis step length.
-    double equilibration    = 0.1;                // Amount of the total steps used for equilibration.
+    double equilibration    = 0;                // Amount of the total steps used for equilibration.
     bool analytical         = true;             // Decide whether to use numerical diff or analytical expression for local energy
     bool imp_sampling       = false;
 

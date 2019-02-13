@@ -3,7 +3,7 @@
 class Examples
 {
 public:
-    static int nonInteractingHObruteForce(int nrOfdims, int nrOfpart, int nrOfsteps, double om);
+    static int nonInteractingHObruteForce(int nrOfdims, int nrOfpart, int nrOfsteps, double om, double al);
     static int nonInteractingHOimportanceSampling(int nrOfdims, int nrOfparts, int nrOfsteps);
     static int interactingEllipticOscillator(int nrOfdims, int nrOfparts, int nrOfsteps);
     static int HeliumAtom();
